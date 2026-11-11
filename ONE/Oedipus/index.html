@@ -46,6 +46,8 @@ body.portrait #rot{display:flex}
 @keyframes rotpulse{0%,100%{opacity:.12}50%{opacity:1}}
 
 #fs:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+/* ONE: on computers the full-screen button sits bottom-right, as on the desktop link (top-right is where the app's microphone button is) */
+#fs{top:auto;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 </style>
 </head>
 <body>
